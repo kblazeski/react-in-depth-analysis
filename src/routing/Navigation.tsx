@@ -24,6 +24,18 @@ export const Navigation = () => {
       <NavLink style={{ paddingRight: '12px' }} to={'/rendering'}>
         Rendering
       </NavLink>
+      <NavLink style={{ paddingRight: '12px' }} to={'/effects/use-effect'}>
+        Use Effect
+      </NavLink>
+      <NavLink style={{ paddingRight: '12px' }} to={'/effects/effect-throttled'}>
+        Use Effect Throttled
+      </NavLink>
+      <NavLink style={{ paddingRight: '12px' }} to={'/effects/layout-effect-throttled'}>
+        Use Layout Effect Throttled
+      </NavLink>
+      <NavLink style={{ paddingRight: '12px' }} to={'/effects/throttled-combined'}>
+        Effects Throttled Combined
+      </NavLink>
     </div>
   );
 };

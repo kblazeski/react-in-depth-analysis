@@ -9,6 +9,10 @@ import { Users as ClassBasedUsers } from './components/class-based/Users';
 import { Users as FunctionalUsers } from './components/functional/Users';
 import { Users as ManagingStateUsers } from './components/managing-state/Users';
 import { Rendering } from './components/rendering/Rendering';
+import { UseEffectExample } from './components/hooks/useEffect/UseEffectExample';
+import { UseLayoutEffectThrottledExample } from './components/hooks/useLayoutEffect/UseLayoutEffectThrottledExample';
+import { UseEffectThrottledExample } from './components/hooks/useLayoutEffect/UseEffectThrottledExample';
+import { LayoutEffectDifferences } from './components/hooks/EffectDifferences';
 
 function App() {
   return (
@@ -28,6 +32,13 @@ function App() {
               }
             />
             <Route path='rendering' Component={Rendering} />
+            <Route path='effects/use-effect' Component={UseEffectExample} />
+            <Route path='effects/effect-throttled' Component={UseEffectThrottledExample} />
+            <Route
+              path='effects/layout-effect-throttled'
+              Component={UseLayoutEffectThrottledExample}
+            />
+            <Route path='effects/throttled-combined' Component={LayoutEffectDifferences} />
           </Route>
         </Routes>
       </BrowserRouter>
