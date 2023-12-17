@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState } from 'react';
 
 export const UseEffectThrottledExample = () => {
   const [effectFinished, setEffectFinished] = useState<string>('initial');
@@ -7,7 +7,6 @@ export const UseEffectThrottledExample = () => {
     console.log('effect ran');
     setEffectFinished('finished');
   }, []);
-
 
   // throttling
   for (let i = 0; i < 1000000000; i++) {}
@@ -21,6 +20,3 @@ export const UseEffectThrottledExample = () => {
     </>
   );
 };
-
-
-

@@ -7,3 +7,8 @@ export const useCountRerender = (): number => {
 
   return numOfRenders.current;
 };
+
+
+
+
+

@@ -13,6 +13,8 @@ import { UseEffectExample } from './components/hooks/useEffect/UseEffectExample'
 import { UseLayoutEffectThrottledExample } from './components/hooks/useLayoutEffect/UseLayoutEffectThrottledExample';
 import { UseEffectThrottledExample } from './components/hooks/useLayoutEffect/UseEffectThrottledExample';
 import { LayoutEffectDifferences } from './components/hooks/EffectDifferences';
+import { UseRefExample } from './components/hooks/useRef/UseRefExample';
+import { CustomHookExample } from './components/hooks/CustomHookExample';
 
 function App() {
   return (
@@ -39,6 +41,8 @@ function App() {
               Component={UseLayoutEffectThrottledExample}
             />
             <Route path='effects/throttled-combined' Component={LayoutEffectDifferences} />
+            <Route path='use-ref' Component={UseRefExample} />
+            <Route path='custom-hook' Component={CustomHookExample} />
           </Route>
         </Routes>
       </BrowserRouter>
