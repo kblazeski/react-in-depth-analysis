@@ -1,0 +1,10 @@
+.user {
+  margin-right: 16px;
+  width: 200px;
+  height: 100px;
+  box-sizing: border-box;
+  padding: 16px;
+  border: 1px solid black;
+  margin-top: 16px;
+  cursor: pointer;
+}

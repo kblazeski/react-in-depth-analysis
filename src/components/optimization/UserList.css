@@ -1,0 +1,19 @@
+.parent {
+  box-sizing: border-box;
+  padding: 16px;
+  border: 1px solid black;
+  max-width: 1000px;
+  width: 1000px;
+  height: 100%;
+}
+
+.children {
+  display: flex;
+  justify-content: start;
+  max-width: 1000px;
+  margin-top: 16px;
+  /* display: flex;
+  flex-direction: column; */
+  max-height: 1000px;
+  overflow-y: scroll;
+}

@@ -42,6 +42,9 @@ export const Navigation = () => {
       <NavLink style={{ paddingRight: '12px' }} to={'/custom-hook'}>
         Custom hook
       </NavLink>
+      <NavLink style={{ paddingRight: '12px' }} to={'/optimization'}>
+        Optimization
+      </NavLink>
     </div>
   );
 };
