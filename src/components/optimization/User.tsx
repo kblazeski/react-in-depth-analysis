@@ -1,22 +1,18 @@
 import { FC, ReactElement, memo } from 'react';
 import { UserModel } from './UserService';
 import './User.css';
-import { useCountRerender } from '../../hooks/useCountRerender';
 
 interface Props {
   user: UserModel;
   selectUser: (user: UserModel) => void;
 }
 
-export const User: FC<Props> = memo(({ user, selectUser }): ReactElement => {
-  const rerenders = useCountRerender();
-
+export const User: FC<Props> = ({ user, selectUser }): ReactElement => {
   return (
-    <div onClick={() => selectUser(user)} className='user'>
+    <div onClick={() => selectUser(user)} className='user-optimization'>
       <span>Name: {user.name}</span>
+      <br />
       <span>Age: {user.age}</span>
-      <span>Number of rerenders: {rerenders}</span>
-      {/* <p>Subordinate: {user.suborindates.map((item) => item.name).join(',')}</p> */}
     </div>
   );
-});
+};

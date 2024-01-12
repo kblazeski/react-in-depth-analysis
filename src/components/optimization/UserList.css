@@ -1,19 +1,11 @@
-.parent {
-  box-sizing: border-box;
-  padding: 16px;
-  border: 1px solid black;
-  max-width: 1000px;
-  width: 1000px;
-  height: 100%;
-}
-
-.children {
+.user-list {
   display: flex;
   justify-content: start;
   max-width: 1000px;
   margin-top: 16px;
-  /* display: flex;
-  flex-direction: column; */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   max-height: 1000px;
   overflow-y: scroll;
 }

@@ -15,7 +15,7 @@ import { UseEffectThrottledExample } from './components/hooks/useLayoutEffect/Us
 import { LayoutEffectDifferences } from './components/hooks/EffectDifferences';
 import { UseRefExample } from './components/hooks/useRef/UseRefExample';
 import { CustomHookExample } from './components/hooks/CustomHookExample';
-import { UserList } from './components/optimization/UserList';
+import { UserPage } from './components/optimization/UserPage';
 
 function App() {
   return (
@@ -44,7 +44,7 @@ function App() {
             <Route path='effects/throttled-combined' Component={LayoutEffectDifferences} />
             <Route path='use-ref' Component={UseRefExample} />
             <Route path='custom-hook' Component={CustomHookExample} />
-            <Route path='optimization' Component={UserList} />
+            <Route path='optimization' Component={UserPage} />
           </Route>
         </Routes>
       </BrowserRouter>
