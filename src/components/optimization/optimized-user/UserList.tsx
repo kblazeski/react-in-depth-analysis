@@ -1,8 +1,8 @@
 import { FC, ReactElement, memo } from 'react';
-import { UserModel } from './UserService';
-import { User } from './User';
-import './UserList.css';
-import { useCountRerender } from '../../hooks/useCountRerender';
+import { UserModel } from '../UserService';
+import { User } from '../User';
+import '../UserList.css';
+import { useCountRerender } from '../../../hooks/useCountRerender';
 
 interface Props {
   users: UserModel[];
@@ -22,5 +22,3 @@ export const UserList: FC<Props> = memo(({ users, selectUser }): ReactElement =>
     </>
   );
 });
-
-

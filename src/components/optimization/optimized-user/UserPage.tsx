@@ -1,6 +1,6 @@
 import { ReactElement, useCallback, useMemo, useState } from 'react';
-import { UserModel, filterUsersByName, getUsers } from './UserService';
-import './UserPage.css';
+import { UserModel, filterUsersByName, getUsers } from '../UserService';
+import '../UserPage.css';
 import { UserList } from './UserList';
 
 export const UserPage = (): ReactElement => {
@@ -34,4 +34,3 @@ export const UserPage = (): ReactElement => {
     </div>
   );
 };
-

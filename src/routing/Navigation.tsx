@@ -6,7 +6,8 @@ export const Navigation = () => {
       style={{
         height: '100px',
         display: 'flex',
-        flexDirection: 'row'
+        flexDirection: 'row',
+        flexWrap: 'wrap'
       }}
     >
       <NavLink style={{ paddingRight: '12px' }} to={'/class-based/users'}>
@@ -42,8 +43,11 @@ export const Navigation = () => {
       <NavLink style={{ paddingRight: '12px' }} to={'/custom-hook'}>
         Custom hook
       </NavLink>
-      <NavLink style={{ paddingRight: '12px' }} to={'/optimization'}>
-        Optimization
+      <NavLink style={{ paddingRight: '12px' }} to={'/non-optimized-users'}>
+        Non optimized users
+      </NavLink>
+      <NavLink style={{ paddingRight: '12px' }} to={'/optimized-users'}>
+        Optimized users
       </NavLink>
     </div>
   );
